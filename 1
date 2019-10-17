@@ -1,0 +1,91 @@
+using System;
+
+
+class MainClass
+{
+  static bool Win1 = false;
+  static bool Win2 = false;
+  static char first = 'x';
+  static char second = 'o';
+  static char [,] field = new char [3,3];  
+  static int inpX, inpY;
+
+  public static void Main()
+  {
+  generate();
+  while(! Win1 || ! Win2)
+    {
+     logic();
+     refresh();
+    }
+  if (Win1 = true)
+    {
+     Console.WriteLine("first player win!");
+    }
+  else 
+    {
+     Console.WriteLine("second player win!");
+    }
+  }
+
+
+  static void input()
+  {
+    switch (Console.ReadKey().Key)
+      {
+      case ConsoleKey.NumPad1:
+        inpX = 2;
+        inpY = 0;
+        break;
+      case ConsoleKey.NumPad2:
+        inpX = 2;
+        inpY = 1;
+        break;
+      case ConsoleKey.NumPad3:
+        inpX = 2;
+        inpY = 2;
+        break;
+      case ConsoleKey.NumPad4:
+        inpX = 1;
+        inpY = 0;
+        break;
+      case ConsoleKey.NumPad5:
+        inpX = 1;
+        inpY = 1;
+        break;
+      case ConsoleKey.NumPad6:
+        inpX = 1;
+        inpY = 2;
+        break;
+      case ConsoleKey.NumPad7:
+        inpX = 0;
+        inpY = 0;
+        break;
+      case ConsoleKey.NumPad8:
+        inpX = 0;
+        inpY = 1;  
+        break;
+      case ConsoleKey.NumPad9:
+        inpX = 0;
+        inpY = 2;
+        break;
+      }  
+
+    }
+
+  }
+  static void refresh()
+  { 
+    
+
+  }
+  static void logic()
+  {
+
+
+  }
+  static void generate()
+  {
+
+    
+  }
